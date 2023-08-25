@@ -4,17 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gluten:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Rock Papper Scissors</title>
   </head>
-  <body>
-    <button class="rock">ROCK</button>
-    <button class="papper">PAPPER</button>
-    <button class="scissors">SCISSORS</button>
-
-    <div class="result">
-      <p id="round">Start Game</p>
-      <p id="player">0</p>
-      <p id="computer">0</p>
+  <body id="bodyT">
+    <div>
+      <header class="title">
+        <h1>Rock, Paper and Scissors</h1>
+        <h3>Best of Five</h3>
+      </header>
+      <main class="container">
+        <div class="controls">
+        <button class="rock"></button>
+        <button class="papper"></button>
+        <button class="scissors"></button>
+        </div>
+        <div class="result">
+          <p id="round">Start Game</p>
+          <div class="score">
+            <p id="player">0</p>
+            <p id="computer">0</p>
+          </div>
+        </div>
     </div>
+    <div class="win-container" id="win_container">
+      <div class="modal">
+        <div class="modalResult">
+          <h1 class="titleResult"></h1>
+          <p class="textResult"></p>
+        </div>
+        <button id="close">Play Again</button>
+      </div>
+      <p class="footer">Game Create by Facundo Flecha</p>
+    </div>
+    <p class="footer">Game Create by Facundo Flecha</p>
+    </main>
   </body>
 </html>

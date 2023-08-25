@@ -1,0 +1,118 @@
+body{
+    height: 100vh;
+    background-color: #bedff0;
+    font-family: 'Gluten', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px ;
+    margin-bottom: 50px;
+    color: #ADC70B;
+    text-shadow: 15px 1px 5px rgba(58, 42, 119, 0.5);
+}
+.title h3{
+    color: #c14cc7;
+    margin: 5px;
+    font-size: 30px;
+    text-shadow: 5px 1px 5px rgba(32,32,32,0.3);
+}
+.controls{
+    display:flex;
+    justify-content: center;
+}
+.controls button{
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rock{
+    background-image: url("img/roca.png");
+}
+.papper{
+    background-image: url("img/papel-higienico.png");
+}
+.scissors{
+    background-image: url("img/tijeras.png");  
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+#round{
+    margin-bottom: 0;
+}
+.score{
+    color: #c14cc7;
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+}
+
+.footer{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 8px;
+    color: rgb(98, 105, 110);
+}
+/*Modal Window*/
+.win-container{
+    display:flex;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aliceblue;
+    height: 500px;
+    width: 400px;
+    opacity:0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10px;
+    background-color: rgb(197, 191, 184);
+}
+.modal{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.modal h1{
+    color: #ADC70B;
+    text-shadow: 0 0 3px #6c91af, 0 0 5px #0000FF;
+    font-size: 40px;
+}
+#close{
+    background-color: #6c91af;
+    font-weight: 800;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+/*Insert by JS*/
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+.positioner{
+    align-items: center;
+}
