@@ -9,7 +9,7 @@ Aspects
 3.Randomized computer player decisions.
 4.Clear display of the game result (win, lose, or draw).
 
-The Proyect is nuilt using:
+The Proyect is built using:
 1.HTML: Strucutre and Layout of the game
 2.CSS: Stylinn the game interface
 3.JavaScript: Game logic, interactions and computer decisions
