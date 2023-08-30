@@ -51,7 +51,6 @@ const body=document.querySelector('#bodyT')
 //Start Playing
 function game(playerSelection){
     point(playRound(playerSelection))
-    console.log(playerPoints, computerPoints)
     if (playerPoints==3) {
         result();
     }else if (computerPoints==3) {
